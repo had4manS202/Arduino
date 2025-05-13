@@ -37,18 +37,3 @@ Place your circuit image here:
 
 ---
 
-## 🧪 Sample Code
-
-```cpp
-int ldrPin = 34; // GPIO34 (Analog Input)
-
-void setup() {
-  Serial.begin(115200);
-}
-
-void loop() {
-  int lightValue = analogRead(ldrPin);
-  Serial.print("Light Intensity: ");
-  Serial.println(lightValue);
-  delay(1000); // Read every second
-}
